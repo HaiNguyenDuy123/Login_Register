@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mẫu đăng ký</title>
+    <link rel="stylesheet" th:href="@{../css/styles.css}">
+
+</head>
+<body>
+    <div class="container">
+        <div class="message" th:if="${message != null}">
+           [[${message}]]
+        </div>
+        <h1>ĐĂNG KÍ</h1>
+        <form th:action="@{/registration}" method="post" role="form" th:object="${user}">
+            <div class="form-group">
+                <label for="fullname">Tên đầy đủ:</label>
+                <input th:field="*{fullname}" type="text" id="fullname" name="fullname" placeholder="Nhập tên đầy đủ" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input th:field="*{email}" type="email" id="email" name="email" placeholder="Nhập email" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="password">Mật khẩu:</label>
+                <input th:field="*{password}" type="password" id="password" name="password" placeholder="Nhập mật khẩu" required>
+            </div>
+            <input type="submit" value="Đăng Kí">
+            <button onclick="window.location.href='/login'">Đăng nhập</button>
+        </form>
+    </div>
+</body>
+</html>
