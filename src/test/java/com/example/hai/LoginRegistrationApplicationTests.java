@@ -1,10 +1,10 @@
-package admin_user;
+package com.example.hai;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class CodingtechniquesTutorialApplicationTests {
+class LoginRegistrationApplicationTests {
 
 	@Test
 	void contextLoads() {

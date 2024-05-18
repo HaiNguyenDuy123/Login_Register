@@ -5,17 +5,16 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>3.1.3</version>
+		<version>3.2.5</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>security_tutorial</groupId>
-	<artifactId>codingtechniques_tutorial</artifactId>
+	<groupId>com.hai</groupId>
+	<artifactId>Login_Registration</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>codingtechniques_tutorial</name>
-	<description>User and Admin Login and Registration Tutoral</description>
+	<name>Login_Registration</name>
+	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>17</java.version>
-		<maven-jar-plugin.version>3.1.1</maven-jar-plugin.version>
 	</properties>
 	<dependencies>
 		<dependency>
